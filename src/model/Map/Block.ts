@@ -1,7 +1,7 @@
 import { IPosition } from "../Sokoban";
-import { MapElt } from "./MapElt";
+import { MovableMapElt } from "./MapElt";
 
-export class Block extends MapElt {
+export class Block extends MovableMapElt {
 
     public position: IPosition
 

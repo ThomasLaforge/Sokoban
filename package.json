@@ -1,0 +1,23 @@
+{
+  "name": "sokoban",
+  "version": "1.0.0",
+  "description": "Sokoban",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasLaforge/Sokoban.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomasLaforge/Sokoban/issues"
+  },
+  "homepage": "https://github.com/ThomasLaforge/Sokoban#readme",
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}

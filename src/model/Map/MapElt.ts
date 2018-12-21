@@ -1,6 +1,6 @@
 import { IPosition, Direction } from "../Sokoban";
 
-export class MapElt {
+export abstract class MapElt {
 
     public position: IPosition
 
@@ -12,6 +12,14 @@ export class MapElt {
         return this.position.x === pos.x && this.position.y === pos.y
     }
 
+}
+
+export class MovableMapElt extends MapElt {
+    
+    constructor(pos: IPosition){
+        super(pos)
+    }
+
     move(direction: Direction){
         switch (direction) {
             case Direction.UP:      this.position.y++;  break;
@@ -21,4 +29,5 @@ export class MapElt {
             default: throw "direction not recognize";
         }
     }
+
 }
